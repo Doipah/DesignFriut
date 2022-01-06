@@ -1,0 +1,144 @@
+import React, {useEffect, useState, useRef} from 'react';
+
+// import type {Node} from 'react';
+
+import {
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  useColorScheme,
+  View,
+  TextInput,
+  Image,
+  TouchableOpacity,
+  FlatList,
+  Dimensions,
+  Animated,
+} from 'react-native';
+import Style from './Styles';
+import Icon from 'react-native-vector-icons/Ionicons';
+import Icon1 from 'react-native-vector-icons/MaterialIcons';
+import react from 'react';
+import Allcss from '../../../css/Allcss';
+
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
+
+import {COLORS} from '../../../css/Allcolors';
+import AppIntroSlider from 'react-native-app-intro-slider';
+
+
+
+
+
+
+
+// css sizescreen
+const windowns = Dimensions.get('window');
+const {height, width} = Dimensions.get('window');
+const screen = Dimensions.get('screen');
+
+//  value
+
+const slides = [
+    {
+      key: 1,
+      title: 'Title 1',
+      text: 'Description.\nSay something cool',
+      image: require('../../image/vegetable.png'),
+      backgroundColor: '#59b2ab',
+    },
+    {
+      key: 2,
+      title: 'Title 2',
+      text: 'Other cool stuff',
+      image: require('../../image/vegetable.png'),
+      backgroundColor: '#febe29',
+    },
+    {
+      key: 3,
+      title: 'Rocket guy',
+      text: 'I\'m already out of descriptions\n\nLorem ipsum bla bla bla',
+      image: require('../../image/vegetable.png'),
+      backgroundColor: '#22bcb5',
+    }
+  ];
+
+const Skipscreen = () => {
+  const [headerShown, setHeaderShown] = useState(false);
+  const translation = useRef(new Animated.Value(-100)).current;
+  const scrolling = useRef(new Animated.Value(0)).current;
+  const [showRealApp,setshowRealApp] = useState(false)
+
+  useEffect(() => {
+    Animated.timing(translation, {
+      toValue: headerShown ? 0 : -100,
+      duration: 250,
+      useNativeDriver: true,
+    }).start();
+  }, [headerShown]);
+
+  _renderItem = ({ item }) => {
+    return (
+      <View style={styles.slide}>
+     
+        <Image source={item.image} />
+        <Text style={styles.text}>{item.text}</Text>
+      </View>
+    );
+  }
+  _onDone = () => {
+    // User finished the introduction. Show real app through
+    // navigation or simply by controlling state
+    this.setState({ showRealApp: true });
+  }
+
+  return (
+    <SafeAreaView style={[{backgroundColor: COLORS.white, flex: 1}]}>
+      <View style={{flex: 1, borderWidth: 1}}>
+          {/* text and logo */}
+        <View
+          style={{
+            justifyContent: 'center',
+            flexDirection: 'row',
+            borderWidth:1,marginBottom:20
+          }}>
+          <View style={{justifyContent: 'center', marginHorizontal: 3}}>
+            <Icon1 name="delivery-dining" size={25} color={COLORS.bgGrreen} />
+          </View>
+          <View style={{justifyContent: 'center', marginHorizontal: 3}}>
+            <Text style={{fontWeight: '700', fontSize: 15}}>Kupa</Text>
+          </View>
+        </View>
+
+        {/* skipImage */}
+        <View style={{borderWidth:1,flex:1,borderColor:'red'}}>
+        <AppIntroSlider renderItem={_renderItem} data={slides} onDone={_onDone}/>
+
+
+        </View>
+
+
+
+      </View>
+    </SafeAreaView>
+  );
+};
+
+export default Skipscreen;
+
+const styles = StyleSheet.create({
+    buttonCircle: {
+      width: 40,
+      height: 40,
+      backgroundColor: 'rgba(0, 0, 0, .2)',
+      borderRadius: 20,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    //[...]
+  });
