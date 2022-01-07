@@ -32,7 +32,6 @@ import Fristscreen from './src/pages/AppKupa/FristScreen/Fristscreen';
 import Skipscreen from './src/pages/AppKupa/SkipScreen/Skipscreen';
 import Loginscreen from './src/pages/AppKupa/Loginscreen/Loginscreen';
 import Signupscreen from './src/pages/AppKupa/Loginscreen/Signupscreen';
-import Verificationscreen from './src/pages/AppKupa/Loginscreen/Verificationscreen';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -75,7 +74,7 @@ const App: () => Node = () => {
 
     <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <StatusBar backgroundColor="#FFF" barStyle='dark-content' />
-       <Verificationscreen/>
+       <Signupscreen/>
     </SafeAreaView>
   );
 };
