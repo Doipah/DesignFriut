@@ -30,63 +30,56 @@ export default StyleSheet.create({
   },
   viewinputpassword2: {flex: 1, justifyContent: 'center'},
   textinput: {marginHorizontal: 15, flex: 1},
-  textforgot: {color: COLORS.bgGrreen, fontWeight: '500'},
-  buttonlogin: {
+  textforgot:{color: COLORS.bgGrreen, fontWeight: '500'},
+  buttonlogin:{
     backgroundColor: COLORS.bgGrreen,
     height: 50,
     borderRadius: 10,
     justifyContent: 'center',
     marginBottom: 25,
   },
-  textbuttonlogin: {
+  textbuttonlogin:{
     color: COLORS.white,
     fontSize: 16,
     fontWeight: '600',
     textAlign: 'center',
-  },
-  viewtextdonthave: {
+  },viewtextdonthave:{
     justifyContent: 'center',
     flexDirection: 'row',
     marginBottom: 25,
   },
-  textSigndothave: {fontWeight: '500', color: COLORS.bgGrreen},
-  Orwith: {flexDirection: 'row', marginBottom: 30},
-  vieworwith: {
+  textSigndothave:{fontWeight: '500', color: COLORS.bgGrreen},
+  Orwith:{flexDirection: 'row', marginBottom: 30},
+  vieworwith:{
     height: hp('0.1%'),
     width: wp('40%'),
     borderWidth: 0.5,
     borderColor: COLORS.colortext,
     justifyContent: 'center',
   },
-  vieworwith2: {
+  vieworwith2:{
     height: hp('0.1%'),
     width: wp('50%'),
     borderWidth: 0.5,
     borderColor: COLORS.colortext,
     justifyContent: 'center',
   },
-  textorwith: {
+  textorwith:{
     marginHorizontal: 9,
     marginTop: -9,
     color: COLORS.colortext,
   },
-  buttonloginwith: {
+  buttonloginwith:{
     backgroundColor: COLORS.white,
     height: 50,
     borderRadius: 10,
-    flexDirection: 'row',
+   flexDirection:'row',
     marginBottom: 10,
-    borderWidth: 1,
-    borderColor: COLORS.colortext,
-    justifyContent: 'center',
+    borderWidth:1,
+    borderColor:COLORS.colortext,
+    justifyContent:'center',
+   
   },
-  buttonicon: {justifyContent: 'center', marginHorizontal: 10},
-  buttonviewloginwith: {justifyContent: 'center', marginHorizontal: 10},
-  buttontextloginwith:{
-    color: COLORS.black,
-    fontSize: 16,
-    fontWeight: '500',
-    textAlign: 'center',
- 
-  }
+  buttonicon:{justifyContent:'center',marginHorizontal:10},
+  buttonviewloginwith:{justifyContent:'center',marginHorizontal:10}
 });

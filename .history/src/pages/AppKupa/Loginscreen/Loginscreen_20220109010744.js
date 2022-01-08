@@ -118,17 +118,24 @@ const Loginscreen = () => {
           <Icon name="arrow-back" size={23} />
         </TouchableOpacity>
         <View style={Style.View1text}>
-          <Text style={Style.texttitlebold}> {'Welcome Back'}</Text>
+          <Text style={Style.texttitlebold}>
+            {' '}
+            {'Welcome Back'}
+          </Text>
         </View>
         <View style={{marginBottom: 25}}>
-          <Text style={Style.textSignup}> {'Sing to your account'}</Text>
+          <Text style={Style.textSignup}>
+            {' '}
+            {'Sing to your account'}
+          </Text>
         </View>
 
         <View style={{marginBottom: 13}}>
           <View style={{marginBottom: 6}}>
             <Text style={{fontWeight: '500'}}>{'Email'}</Text>
           </View>
-          <View style={Style.viewinput}>
+          <View
+            style={Style.viewinput}>
             <TextInput
               style={Style.textinput}
               placeholder="Your Email"
@@ -140,7 +147,8 @@ const Loginscreen = () => {
           <View style={{marginBottom: 6}}>
             <Text style={{fontWeight: '500'}}>{'Password'}</Text>
           </View>
-          <View style={Style.viewinputpassword}>
+          <View
+            style={Style.viewinputpassword}>
             <View style={Style.viewinputpassword2}>
               <TextInput
                 secureTextEntry={showPassword}
@@ -171,43 +179,103 @@ const Loginscreen = () => {
           onPress={() => {
             alert('forget Passweord');
           }}>
-          <Text style={Style.textforgot}>{'Forget Password?'}</Text>
+          <Text style={Style.textforgot}>
+            {'Forget Password?'}
+          </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={Style.buttonlogin}>
-          <Text style={Style.textbuttonlogin}>{'Login'}</Text>
+        <TouchableOpacity
+          style={Style.buttonlogin}>
+          <Text
+            style={Style.textbuttonlogin}>
+            {'Login'}
+          </Text>
         </TouchableOpacity>
-        <View style={Style.viewtextdonthave}>
+        <View
+          style={Style.viewtextdonthave}>
           <View>
             <Text>{"Don't have an anccount?"} </Text>
           </View>
           <TouchableOpacity>
-            <Text style={Style.textSigndothave}>{'Sign Up'}</Text>
+            <Text style={Style.textSigndothave}>
+              {'Sign Up'}
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
       <View style={{flex: 0.7}}>
         <View style={Style.Orwith}>
-          <View style={Style.vieworwith}></View>
-          <Text style={Style.textorwith}>{'Or with'}</Text>
-          <View style={Style.vieworwith2}></View>
+          <View
+            style={Style.vieworwith}></View>
+          <Text
+            style={{
+              marginHorizontal: 9,
+              marginTop: -9,
+              color: COLORS.colortext,
+            }}>
+            {'Or with'}
+          </Text>
+          <View
+            style={{
+              height: hp('0.1%'),
+              width: wp('50%'),
+              borderWidth: 0.5,
+              borderColor: COLORS.colortext,
+              justifyContent: 'center',
+            }}></View>
         </View>
         <View style={{marginHorizontal: 15}}>
-          <TouchableOpacity style={Style.buttonloginwith}>
-            <View style={Style.buttonicon}>
+          <TouchableOpacity
+            style={{
+              backgroundColor: COLORS.white,
+              height: 50,
+              borderRadius: 10,
+             flexDirection:'row',
+              marginBottom: 10,
+              borderWidth:1,
+              borderColor:COLORS.colortext,
+              justifyContent:'center',
+             
+            }}>
+            <View style={{justifyContent:'center',marginHorizontal:10}}>
               <Icon name="logo-google" size={20} />
             </View>
-            <View style={Style.buttonviewloginwith}>
-              <Text style={Style.buttontextloginwith}>
+            <View style={{justifyContent:'center',marginHorizontal:10}}>
+              <Text
+                style={{
+                  color: COLORS.black,
+                  fontSize: 16,
+                  fontWeight: '500',
+                  textAlign: 'center',
+               
+                }}>
                 {'Sign in with Google'}
               </Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity style={Style.buttonloginwith}>
-            <View style={Style.buttonicon}>
+          <TouchableOpacity
+            style={{
+              backgroundColor: COLORS.white,
+              height: 50,
+              borderRadius: 10,
+             flexDirection:'row',
+              marginBottom: 10,
+              borderWidth:1,
+              borderColor:COLORS.colortext,
+              justifyContent:'center',
+             
+            }}>
+            <View style={{justifyContent:'center',marginHorizontal:10}}>
               <Icon name="logo-apple" size={20} />
             </View>
-            <View style={Style.buttonviewloginwith}>
-              <Text style={Style.buttontextloginwith}>
+            <View style={{justifyContent:'center',marginHorizontal:10}}>
+              <Text
+                style={{
+                  color: COLORS.black,
+                  fontSize: 16,
+                  fontWeight: '500',
+                  textAlign: 'center',
+               
+                }}>
                 {'Sign in with Apple'}
               </Text>
             </View>

@@ -106,7 +106,7 @@ const Forgotpassword = () => {
         <View style={{marginTop: 45}}>
           <Text
             style={{
-              
+              textAlign: '',
               marginBottom: 10,
               fontWeight: '600',
               fontSize: 23,
@@ -114,7 +114,7 @@ const Forgotpassword = () => {
             {'Forgot Password'}
           </Text>
           <Text
-            style={{ color: COLORS.colortext, marginBottom: 5}}>
+            style={{textAlign: '', color: COLORS.colortext, marginBottom: 5}}>
             {
               'Select which contact details should we use to reset your password'
             }
@@ -191,7 +191,7 @@ const Forgotpassword = () => {
                 <Text style={{fontWeight: '600', marginBottom: 5}}>
                   {'Phone Number'}
                 </Text>
-                <Text style={{ fontWeight: '400' ,color: COLORS.colortext}}>{'Send to your phone number'}</Text>
+                {/* <Text style={{ fontWeight: '400' ,color: COLORS.colortext}}>{'Send to your phone number'}</Text> */}
               </View>
             </View>
           </TouchableOpacity>
@@ -210,10 +210,10 @@ const Forgotpassword = () => {
           }}>
           <Text
             style={{
-              color: COLORS.white,
+              // color: COLORS.white,
               fontSize: 16,
               fontWeight: '600',
-              textAlign: 'center',
+              // textAlign: 'center',
             }}>
             {'Continue'}
           </Text>
