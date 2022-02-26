@@ -30,17 +30,18 @@ import Profiles from './src/pages/Profiles/Profiles';
 
 import Fristscreen from './src/pages/AppKupa/FristScreen/Fristscreen';
 import Skipscreen from './src/pages/AppKupa/SkipScreen/Skipscreen';
+import Loginscreen from './src/pages/AppKupa/Loginscreen/Loginscreen';
 import Congratulationscreen from './src/pages/AppKupa/Congrascreen/Congratulation'
 import Signupscreen from './src/pages/AppKupa/Loginscreen/Signupscreen';
 import Verificationscreen from './src/pages/AppKupa/Loginscreen/Verificationscreen';
 import Forgotpassword from './src/pages/AppKupa/Forgotpassword/Forgotpassword';
 import Homekupascreen from './src/pages/AppKupa/Homescreen/HomeKupascreen';
-import Splashscreen from './src/pages/AppIntranet/Splash/Splashscreen';
-import Loginscreen from './src/pages/AppIntranet/Login/Loginscreen';
-import Homescreen from './src/pages/AppIntranet/Home/Homescreen';
+import HomeLonding from './src/pages/AppIntranet/Splash/Splashscreen';
+import Homelogin from './src/pages/AppIntranet/Login/Loginscreen';
 
 
-const App = () => {
+
+const App () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -55,7 +56,10 @@ const App = () => {
 
     <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <StatusBar backgroundColor="#FFF" barStyle='dark-content' />
-       <Homescreen/>
+       {/* <Homekupascreen/> */}
+       {/* <Fristscreen /> */}
+       {/* <HomeLonding/> */}
+       <Homelogin/>
     </SafeAreaView>
   );
 };

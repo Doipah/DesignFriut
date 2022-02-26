@@ -55,6 +55,9 @@ const App = () => {
 
     <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <StatusBar backgroundColor="#FFF" barStyle='dark-content' />
+       {/* <Homekupascreen/> */}
+       {/* <Fristscreen /> */}
+       {/* <HomeLonding/> */}
        <Homescreen/>
     </SafeAreaView>
   );
