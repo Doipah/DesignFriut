@@ -69,7 +69,7 @@ const ChoosMenu = index => {
   };
 
 
-///////// end function ///////
+
 
 const Homescreen = () => {
 
