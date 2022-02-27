@@ -2754,6 +2754,18 @@ csstype@^3.0.2:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.0.10.tgz"
   integrity sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==
 
+"d3-path@1 - 2":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/d3-path/-/d3-path-2.0.0.tgz#55d86ac131a0548adae241eebfb56b4582dd09d8"
+  integrity sha512-ZwZQxKhBnv9yHaiWd6ZU4x5BtCQ7pXszEV9CU6kRgwIQVQGLMv1oiL4M+MK/n79sYzsj+gcgpPQSctJUsLN7fA==
+
+d3-shape@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/d3-shape/-/d3-shape-2.1.0.tgz#3b6a82ccafbc45de55b57fcf956c584ded3b666f"
+  integrity sha512-PnjUqfM2PpskbSLTJvAzp2Wv4CZsnAgTfcVRTwW03QR3MkXF8Uo7B1y/lWkAsmbKwuecto++4NlsYcvYpXpTHA==
+  dependencies:
+    d3-path "1 - 2"
+
 data-urls@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/data-urls/-/data-urls-2.0.0.tgz"
@@ -6246,11 +6258,18 @@ react-native-splash-screen@^3.3.0:
 
 react-native-svg@^12.1.1:
   version "12.1.1"
-  resolved "https://registry.npmjs.org/react-native-svg/-/react-native-svg-12.1.1.tgz"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-12.1.1.tgz#5f292410b8bcc07bbc52b2da7ceb22caf5bcaaee"
   integrity sha512-NIAJ8jCnXGCqGWXkkJ1GTzO4a3Md5at5sagYV8Vh4MXYnL4z5Rh428Wahjhh+LIjx40EE5xM5YtwyJBqOIba2Q==
   dependencies:
     css-select "^2.1.0"
     css-tree "^1.0.0-alpha.39"
+
+react-native-utils-navigation-bar@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/react-native-utils-navigation-bar/-/react-native-utils-navigation-bar-2.0.4.tgz#250b0a2459852b869e0e6cbb1a2aa14f2f6caf75"
+  integrity sha512-VmOGNdcNkyJftJxBb1lZwNrImDlgunSo+kdRF3KBBAmM6iKx1fq+8NlTaofKTJERkk/cAQd0gdFXxR66ojCrLg==
+  dependencies:
+    d3-shape "^2.1.0"
 
 react-native-vector-icons@^9.0.0:
   version "9.0.0"
